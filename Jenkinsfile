@@ -13,12 +13,12 @@ pipeline {
           steps {
              script
               {
-                System.out.println "Second Stage Here"          
+                 println "Second Stage Here"          
              
                  def data = 100
                  def num = 2334
                  def sum = data + num
-                 System.out.println "Sum is $sum" 
+                 println "Sum is $sum" 
               }
               
              }
