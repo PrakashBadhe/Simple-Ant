@@ -11,12 +11,15 @@ pipeline {
         }
         stage('Accessing apis from external server'){
           steps {
-                 System.out.println "Second Stage Here"          
+             script
+              {
+                System.out.println "Second Stage Here"          
              
                  def data = 100
                  def num = 2334
                  def sum = data + num
-                 System.out.println "Sum is $sum"             
+                 System.out.println "Sum is $sum" 
+              }
               
              }
                 
